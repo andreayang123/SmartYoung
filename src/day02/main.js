@@ -125,6 +125,3 @@ console.log(test1.min(15,21,8));
 
 
 
-
-
-

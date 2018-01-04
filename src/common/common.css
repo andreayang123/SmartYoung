@@ -1,0 +1,145 @@
+/*.top-nav-container {
+	background-color: #373D41;
+	width: 100%;
+	height: 50px;
+}
+
+#top-nav {
+	list-style: none;
+}
+
+.top-nav-item {
+	float: left;
+	margin: 10px 20px;
+	color: #FFF;
+}
+
+.top-nav-item:hover {
+	color: #00BCD9;
+	cursor: pointer;
+	border-bottom: 5px solid #00BCD9;
+	padding-bottom: 14px;
+}
+
+.register-container {
+	background-color: #F5F5F6;
+	width: 800px;
+	height: 400px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -200px;
+	margin-left: -400px;
+
+}
+
+.input-box {
+	width: 80%;
+	height: 30px;
+}
+
+
+#username-box {
+	margin-left: -2px;
+	margin-bottom: 25px;
+}
+
+#confirm-btn {
+	text-decoration: none;
+	position: relative;
+	top: 10px;
+	color: #FFF;
+	font-size: 18px;
+}
+
+.confirm-btn-container {
+	margin-top: 50px;
+	width: 100%;
+	background-color: #00BEDB;
+	height: 40px;
+	cursor: pointer;
+}
+
+.confirm-btn-container:hover {
+	background-color: #00B7D3;
+}
+.register-content {
+	width: 400px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.username-container {
+	width: 100%;
+	margin-top: 50px;
+}
+
+.password-container {
+	width: 100%;
+	margin-top: 20px;
+}
+
+.form-item-label {
+	float: left;
+	width: 18%;
+	text-align: right;
+}
+*/
+.form-wrapper{
+	width: 800px;
+	height: 400px;
+	background-color: #F5F5F6;
+	position: absolute;
+	top: 50%;
+	left:50%;
+	margin-top: -200px;
+	margin-left:-400px;
+}
+
+.form-container{
+	width: 400px;
+	margin: 0 auto;
+
+}
+
+.input-box{
+	height: 25px;
+	width: 80%;
+}
+
+.username-container{
+	width: 100%;
+	margin-top: 60px;
+}
+
+.pwd-container{
+	width: 100%;
+	margin-top: 20px;
+}
+
+.form-item-label{
+	float: left;
+	text-align: right;
+	width: 17%;
+}
+
+#link-style {
+	text-decoration: none;
+	position: relative;
+	top: 7px;
+	color: #FFF;
+	font-size: 18px;
+}
+
+.button-container {
+	width: 100%;
+	margin-top: 50px;
+	background-color: #00C1DE;
+	height: 40px;
+	text-align: center;
+}
+
+.button-container:hover{
+	background-color: #00B7D3;
+	cursor: pointer;
+}
