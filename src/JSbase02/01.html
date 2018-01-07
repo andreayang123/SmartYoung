@@ -1,0 +1,134 @@
+<!-- 1：当点击确定，弹出消息提示“您已退出”     当点击取消  弹出消息“您已取消退出” -->
+<!-- 
+<html>
+<head>
+	<title>js02</title>
+	<script type="text/javascript">
+		var n1=confirm("您确定您要退出吗");
+		if (n1==true) {
+			alert("您已退出");
+		}else{
+			alert("您已取消退出");
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>  -->
+
+<!-- 2：接收用户输入一个数字，判断是否是偶数，如果是偶数那么在控制台中将该数字输出，如果不是偶数那么在控制台中提示该数字不是偶数 -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title>js02.1</title>
+	<script type="text/javascript">
+		var n2=prompt("请输入数字");
+		if (n2%2==0) {
+			console.log(n2);
+		}else{
+			alert("不是偶数");
+		}
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
+ -->
+
+ <!-- 3.接收用户输入一个数字，判断当前数字是否在20到70之间，如果在该数字范围内，请将该数字输出，否则提示不在该范围内。 -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title>js02.3</title>
+	<script type="text/javascript">
+		var n3=prompt("请输入数字");
+		if (n3>20 && n3<70) {
+			alert(n3);
+		}else{
+			alert("不在该范围");
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html> -->
+
+<!-- 4.写一个程序接收用户输入的值，该值和随机产生的随机整数（0-99  包含0 和99）做比较，如果用户输入的值大于随机数输出：您赢了，否则您输了
+-->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title>js03.4</title>
+	<script type="text/javascript">
+		var n4=prompt("请输入数字");
+		var n5=parseInt(Math.random()*100);
+		if (n4>n5) {
+			alert("您赢了");	
+
+		}else{
+			alert("您输了");
+		}
+	</script>
+</head>
+<body>
+</body>
+</html> -->
+
+<!-- 1：接收用户输入年龄。判断当前年龄所属于哪个间断？ 
+比如：年龄20  所处的阶段为青年
+注意：以10岁为一个年龄段 -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title>js2.5</title>
+	<script type="text/javascript">
+		var n5=prompt("请输入数字");
+		if (n5>0 && n5<=10) {
+			alert("小孩");
+		}else if(n5>10 && n5<=20){
+			alert("少年");
+		}else if(n5>20 && n5<=30){
+			alert("青年");
+		}else{
+			alert("中老年");
+		}
+
+	</script>
+</head>
+<body>
+</body>
+</html> -->
+
+<!-- 接收用户输入的成绩和姓名，每15分为一个档。以50分为起点， 判断当前学生成绩在哪个范围并只给出提示信息（优，良，差，）同时如果成绩正好为90分，还要在控制台中输出当前学生的姓名及提示信息（优，良，差）。 -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title>js2.7</title>
+	<script type="text/javascript">
+		var name=prompt("请输入姓名");
+		var score=prompt("请输入成绩");
+		if (score>50 && score<=65) {
+			alert("差");
+		}else if (score>65 && score<=80){
+			alert("良");
+		}else if(score>80 && score<=95){
+			if (score==90) {
+				console.log(name+"优");
+			}else{
+				alert("优");
+			}
+
+		}else{
+			alert("其他");
+		}
+		
+	</script>
+</head>
+<body>
+
+</body>
+</html> -->
