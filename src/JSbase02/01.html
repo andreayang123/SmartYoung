@@ -89,7 +89,7 @@
 		var n5=prompt("请输入数字");
 		if (n5>0 && n5<=10) {
 			alert("小孩");
-		}else if(n5>10 && n5<=20){
+		}else if(n5<=20){
 			alert("少年");
 		}else if(n5>20 && n5<=30){
 			alert("青年");
@@ -132,3 +132,185 @@
 
 </body>
 </html> -->
+
+<!-- 1：一个加油站为了鼓励车主多加油，所以加的多有优惠。
+       92号汽油，每升6元；如果大于等于20升，那么每升5.9；
+       97号汽油，每升7元；如果大于等于30升，那么每升6.95
+      编写JS程序，用户输入自己的汽油编号，然后输入自己加多少升，弹出价格。 -->
+    <!--   <!DOCTYPE html>
+      <html>
+      <head>
+      	<title>js02.8</title>
+      	<script type="text/javascript">
+      		var gasnum=Number(prompt("	请输入汽油编号"));
+      		var gasvul=Number(prompt("请输入汽油升数"));
+
+      		if (gasnum==92) {
+      			if (gasvul<20) {
+      				alert(gasvul*6);
+      			}else{
+      				alert(gasvul*5.9);
+      			}
+      		}else if (gasnum==97){
+      			if (gasvul<30) {
+      				alert(gasvul*7);
+      			}else{
+      				alert(gasvul*6.95);
+      			}
+      		}else{
+      			alert("您输错汽油号");
+      		}
+      	</script>
+      </head>
+      <body>
+      
+      </body>
+      </html> -->
+<!-- 
+
+      2：写出以下程序：
+         收先接收用户输入的用户名，判断该用户名是否是admin,如果不是直接程序终止，
+         如果是那么再次提示让用户输入密码,如果密码是88888,那么提示登录成功，否则提示登录失败。 -->
+
+<!--          <!DOCTYPE html>
+         <html>
+         <head>
+         	<title>js2.9</title>
+         	<script type="text/javascript">
+         		var name=prompt("请输入您的名字");
+         		if(name=="admin"){
+         			var psd=Number(prompt("请输入密码"));
+         			if (psd==88888) {
+         				alert("你已登录成功");
+         			}else{
+         				alert("登陆失败")
+         			}
+         		}else{
+
+         		}
+         	</script>
+         </head>
+         <body>
+         
+         </body>
+         </html> -->
+
+         <!-- 写一个程序，接收用户输入的三个数字，使用三元运算表达式找出最大值 -->
+         <!-- <!DOCTYPE html>
+         <html>
+         <head>
+         	<title>js2.10</title>
+         	<script type="text/javascript">
+         		var n1=Number(prompt("请输入数字"));
+         		var n2=Number(prompt("请输入数字"));
+         		var n3=Number(prompt("请输入数字"));
+         		(n1>n2? n1:n2)>n3?alert((n1>n2? n1:n2)):alert(n3);
+         	</script>
+         </head>
+         <body>
+         
+         </body>
+         </html> -->
+         <!-- 2:根据用户输入月份，显示对应的季节（例如：3,4,5为春季） -->
+      <!--    <!DOCTYPE html>
+         <html>
+         <head>
+         	<title>switch01</title>
+         	<script type="text/javascript">
+         		var month=Number(prompt("请输入月份"));
+         		switch(month){
+         				case 3: case 4: case 5:
+         				alert("春季");
+         				break;
+         				case 6: case 7: case 8:
+         				alert("夏季");
+         				break;
+         				case 9: case 10: case 11:
+         				alert("秋季");
+         				break;
+         				case 12: case 1: case 2:
+         				alert("冬季");
+         				break;
+         				default:
+         				alert("不存在该月份");
+         				break;
+         		}
+         	</script>
+         </head>
+         <body>
+         
+         </body>
+         </html>
+
+
+2：求1到100之间的数字和。在控制台中输出
+ -->
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title>while</title>
+ 	<script type="text/javascript">
+ 		// var sum=0;
+ 		// for (var n1=1; n1<=100; n1++) {
+ 		// 	sum=sum+n1;
+ 		// }
+ 		// console.log(sum);
+ 		 // <!-- 将1到100之间所有是6的倍数的数字输出到控制台中 -->
+ 		 // for (var n1=1; n1<=100; n1++) {
+ 		 // 	if (n1%6==0) {
+ 		 // 		console.log(n1);
+ 		 // 	}else{
+
+ 		 // 	}
+ 		 // }
+
+ 		 // 在页面中打印两行10颗*
+ 		//  for(var j=1; j<=2;j++){
+ 		//  for(var n1=1; n1<=10; n1++){
+ 		//  	document.write("*");
+ 		//  }document.write("<br>");
+ 		// }
+ 		// 在页面中打印一个直角三角形
+ 		// for (var j=1; j<=9;j++) {
+ 		// for(var i=1; i<=j; i++){
+ 		// document.write("*");
+ 		// }document.write("<br>");
+ 		// }
+ 		// 九九乘法表
+ 		// for(var j=1;j<=9;j++){
+ 		//  	for(var i=1;i<=j;i++){
+ 		// 		document.write(i+"X"+j+"="+i*j+"&nbsp;");
+ 		// 	}document.write("<br>");
+ 		// }
+
+ 		// 请将1到100之间所有数字输出，排除是3的倍数的数字
+ 		// for(var n1=1; n1<=100; n1++){
+ 		// 	if (n1%3==0) {
+ 		// 		continue;
+ 		// 	}else{
+ 		// 		console.log(n1);
+ 		// 	}
+ 		// }
+
+
+// 2：接收用户输入的用户名和密码，如果用户名不是admin或者密码不是888，
+// 就一直提示用户重新输入，如果用户名和密码都正确，那么程序立马停止（使用while循环做）
+	// /*var username=prompt("请输入用户名");
+	// var psd=prompt("请输入密码");
+	// while(username!="admin"|| psd!="888"){
+	// 	alert("请重新输入用户名和密码");
+	// 	prompt("请输入用户名");
+	// 	prompt("请输入密码");
+	// }
+
+ 	</script>
+ </head>
+ <body> 
+ 
+ </body>
+ </html> 
+
+
+
+
+
