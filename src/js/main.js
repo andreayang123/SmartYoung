@@ -1,4 +1,4 @@
-var tempArr = [];
+/*var tempArr = [];
 
 tempArr[0] = "jack";
 tempArr[1] = "rose";
@@ -11,7 +11,7 @@ var tempArr1 = [];
 tempArr1[0] = "jack";
 tempArr1[1] = "rose";
 tempArr1[2] = "jerry";
-tempArr1[3] = "mimi";
+tempArr1[3] = "mimi";*/
 
 
 //var name = tempArr[1];
@@ -39,4 +39,57 @@ tempArr1[3] = "mimi";
 //alert("返回值是:"+ tempArr.toString());
 //sort方法用来对数组元素进行排序，默认排序是从小到大排序，也可以自定义，通过参数方法来进行操作
 //tempArr.sort();
+
+
+
+//变量提升
+/*function add(){
+	var test;
+	console.log(test);
+	test = 456;
+	console.log(test);
+}
+add();*/
+//console.log(test);
+
+//变量作用域及生命周期
+var cups = "sdfdsfsdf";
+function getCup(){
+	var _cup = "5165463";
+	return function(){
+		return _cup;
+	}
+}
+
+var temp = getCup();
+console.log(temp());
+
+//变量的封装及立即执行函数表达式
+/*var myObj = (function(){
+	var _name = "jack";
+	return {
+		getName: function(){
+			return _name;
+		}
+
+	};
+})();
+
+console.log(myObj.getName());*/
+
+
+//匿名方法,立即执行函数表达式
+/* (function(){
+
+
+
+ })();
+
+
+ var test = 123;
+ var test= function(){
+
+
+ }*/
+
 
